@@ -5,18 +5,30 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DW_EXEMPLO", "DW_EXEMPLO\DW_EXEMPLO.sqlproj", "{B6B57130-A39D-45C2-9C33-D970B1744A68}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CargaDataWareHouse", "CargaDataWareHouse\CargaDataWareHouse.dtproj", "{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Development|Any CPU.Deploy.0 = Debug|Any CPU
 		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B6B57130-A39D-45C2-9C33-D970B1744A68}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}.Debug|Any CPU.ActiveCfg = Development
+		{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}.Debug|Any CPU.Build.0 = Development
+		{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}.Development|Any CPU.ActiveCfg = Development
+		{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}.Development|Any CPU.Build.0 = Development
+		{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}.Release|Any CPU.ActiveCfg = Development
+		{D3DE1FB3-B0D4-4DAF-BBB6-D5E61022F564}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
