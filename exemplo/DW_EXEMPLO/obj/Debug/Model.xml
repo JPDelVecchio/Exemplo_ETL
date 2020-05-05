@@ -69,7 +69,25 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Dim_Cliente].[Cod_Cliente]" />
+								<References Name="[DBO].[FATO_005].[COD_DIA]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_005].[COD_PRODUTO]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_005].[COD_FABRICA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -77,7 +95,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente]" />
+					<References Name="[DBO].[FATO_005]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
@@ -88,7 +106,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Dim_Categoria].[Cod_Categoria]" />
+								<References Name="[DBO].[DIM_CATEGORIA].[COD_CATEGORIA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -96,7 +114,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Categoria]" />
+					<References Name="[DBO].[DIM_CATEGORIA]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
@@ -107,7 +125,34 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Dim_Marca].[Cod_marca]" />
+								<References Name="[DBO].[FATO_002].[COD_DIA]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_002].[COD_CLIENTE]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_002].[COD_PRODUTO]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_002].[COD_FABRICA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -115,7 +160,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Marca]" />
+					<References Name="[DBO].[FATO_002]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
@@ -126,7 +171,34 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Dim_Produto].[COD_PRODUTO]" />
+								<References Name="[DBO].[FATO_004].[COD_DIA]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_004].[COD_CLIENTE]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_004].[COD_PRODUTO]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_004].[COD_ORGANIZACIONAL]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -134,7 +206,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto]" />
+					<References Name="[DBO].[FATO_004]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
@@ -145,7 +217,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Dim_Organizacional].[Cod_Filho]" />
+								<References Name="[DBO].[DIM_CLIENTE].[COD_CLIENTE]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -153,7 +225,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional]" />
+					<References Name="[DBO].[DIM_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
@@ -164,7 +236,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Dim_Tempo].[Cod_Dia]" />
+								<References Name="[DBO].[DIM_MARCA].[COD_MARCA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -172,7 +244,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo]" />
+					<References Name="[DBO].[DIM_MARCA]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
@@ -183,43 +255,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_001].[Cod_Dia]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_001].[Cod_Cliente]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_001].[Cod_Produto]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_001].[Cod_Organizacional]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_001].[Cod_Fabrica]" />
+								<References Name="[DBO].[DIM_ORGANIZACIONAL].[COD_FILHO]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -227,7 +263,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_001]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
@@ -238,7 +274,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_002].[Cod_Dia]" />
+								<References Name="[DBO].[FATO_003].[COD_DIA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -247,25 +283,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_002].[Cod_Cliente]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_002].[Cod_Produto]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_002].[Cod_Fabrica]" />
+								<References Name="[DBO].[FATO_003].[COD_FABRICA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -273,7 +291,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_002]" />
+					<References Name="[DBO].[FATO_003]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
@@ -284,7 +302,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_003].[Cod_Dia]" />
+								<References Name="[DBO].[FATO_001].[COD_DIA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -293,7 +311,34 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_003].[Cod_Fabrica]" />
+								<References Name="[DBO].[FATO_001].[COD_CLIENTE]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_001].[COD_PRODUTO]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_001].[COD_ORGANIZACIONAL]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[DBO].[FATO_001].[COD_FABRICA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -301,7 +346,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_003]" />
+					<References Name="[DBO].[FATO_001]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
@@ -312,34 +357,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_004].[Cod_Dia]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_004].[Cod_Cliente]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_004].[Cod_Produto]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_004].[Cod_Organizacional]" />
+								<References Name="[DBO].[DIM_TEMPO].[COD_DIA]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -347,7 +365,7 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_004]" />
+					<References Name="[DBO].[DIM_TEMPO]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
@@ -358,25 +376,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Fato_005].[Cod_Dia]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_005].[Cod_Produto]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[Fato_005].[Cod_Fabrica]" />
+								<References Name="[DBO].[DIM_PRODUTO].[COD_PRODUTO]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -384,16 +384,16 @@
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_005]" />
+					<References Name="[DBO].[DIM_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Dim_Categoria]">
+		<Element Type="SqlTable" Name="[DBO].[DIM_CATEGORIA]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Categoria].[Cod_Categoria]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CATEGORIA].[COD_CATEGORIA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -401,7 +401,7 @@
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -411,14 +411,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Categoria].[Desc_Categoria]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CATEGORIA].[DESC_CATEGORIA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -433,11 +433,11 @@
 				</Entry>
 			</Relationship>
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Dim_Cliente]">
+		<Element Type="SqlTable" Name="[DBO].[DIM_CLIENTE]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Cod_Cliente]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[COD_CLIENTE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -451,18 +451,18 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="4" />
+						<AttachedAnnotation Disambiguator="8" />
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Desc_Cliente]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[DESC_CLIENTE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -471,14 +471,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Cod_Cidade]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[COD_CIDADE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -487,14 +487,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Desc_Cidade]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[DESC_CIDADE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -503,14 +503,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Cod_Estado]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[COD_ESTADO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -519,14 +519,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Desc_Estado]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[DESC_ESTADO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -535,14 +535,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Cod_Regiao]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[COD_REGIAO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -551,14 +551,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Desc_Regiao]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[DESC_REGIAO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -567,14 +567,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Cod_Segmento]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[COD_SEGMENTO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -583,14 +583,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Cliente].[Desc_Segmento]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_CLIENTE].[DESC_SEGMENTO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -649,11 +649,11 @@
 				</Entry>
 			</Relationship>
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Dim_Marca]">
+		<Element Type="SqlTable" Name="[DBO].[DIM_MARCA]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Marca].[Cod_marca]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_MARCA].[COD_MARCA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -661,24 +661,24 @@
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="6" />
+						<AttachedAnnotation Disambiguator="9" />
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Marca].[Desc_Marca]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_MARCA].[DESC_MARCA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -687,14 +687,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Marca].[Cod_Categoria]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_MARCA].[COD_CATEGORIA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -710,11 +710,11 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Dim_Organizacional]">
+		<Element Type="SqlTable" Name="[DBO].[DIM_ORGANIZACIONAL]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Organizacional].[Cod_Filho]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_ORGANIZACIONAL].[COD_FILHO]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -728,11 +728,11 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="8" />
+						<AttachedAnnotation Disambiguator="10" />
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Organizacional].[Desc_Filho]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_ORGANIZACIONAL].[DESC_FILHO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -748,7 +748,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Organizacional].[Cod_Pai]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_ORGANIZACIONAL].[COD_PAI]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -764,7 +764,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Organizacional].[Esquerda]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_ORGANIZACIONAL].[ESQUERDA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -779,7 +779,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Organizacional].[Direita]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_ORGANIZACIONAL].[DIREITA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -794,7 +794,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Organizacional].[Nivel]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_ORGANIZACIONAL].[NIVEL]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -816,11 +816,11 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Dim_Produto]">
+		<Element Type="SqlTable" Name="[DBO].[DIM_PRODUTO]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Produto].[COD_PRODUTO]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_PRODUTO].[COD_PRODUTO]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -834,18 +834,18 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
+						<AttachedAnnotation Disambiguator="14" />
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Produto].[DESC_PRODUTO]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_PRODUTO].[DESC_PRODUTO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -854,14 +854,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Produto].[atr_tamanho]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_PRODUTO].[ATR_TAMANHO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -870,14 +870,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Produto].[atr_Sabor]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_PRODUTO].[ATR_SABOR]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="200" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -886,14 +886,14 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Produto].[Cod_marca]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_PRODUTO].[COD_MARCA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
 									<Property Name="Length" Value="50" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[varchar]" />
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -909,11 +909,11 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Dim_Tempo]">
+		<Element Type="SqlTable" Name="[DBO].[DIM_TEMPO]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Dia]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_DIA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -927,11 +927,11 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="9" />
+						<AttachedAnnotation Disambiguator="13" />
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Dia]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[DIA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -946,7 +946,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Semana]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_SEMANA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -961,7 +961,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Dia_Semana]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_DIA_SEMANA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -977,7 +977,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Mes]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_MES]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -992,7 +992,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Mes]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_MES]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1008,7 +1008,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Mes_Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_MES_ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1024,7 +1024,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Mes_Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_MES_ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1040,7 +1040,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Trimestre]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_TRIMESTRE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1055,7 +1055,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Trimestre]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_TRIMESTRE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1071,7 +1071,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Trimestre_Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_TRIMESTRE_ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1087,7 +1087,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Trimestre_Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_TRIMESTRE_ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1103,7 +1103,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Semestre]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_SEMESTRE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1118,7 +1118,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Semestre]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_SEMESTRE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1134,7 +1134,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Cod_Semestre_Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[COD_SEMESTRE_ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1150,7 +1150,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Nome_Semestre_Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[NOME_SEMESTRE_ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1166,7 +1166,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Ano]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[ANO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1182,7 +1182,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Dim_Tempo].[Tipo_Dia]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[DIM_TEMPO].[TIPO_DIA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1204,11 +1204,11 @@
 				</Entry>
 			</Relationship>
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Fato_001]">
+		<Element Type="SqlTable" Name="[DBO].[FATO_001]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Cod_Cliente]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[COD_CLIENTE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1225,7 +1225,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Cod_Produto]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[COD_PRODUTO]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1242,7 +1242,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Cod_Organizacional]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[COD_ORGANIZACIONAL]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1259,7 +1259,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Cod_Fabrica]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[COD_FABRICA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1276,7 +1276,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Cod_Dia]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[COD_DIA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1293,7 +1293,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Faturamento]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[FATURAMENTO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1309,7 +1309,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Custo_Variavel]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[CUSTO_VARIAVEL]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1325,7 +1325,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Quantidade_Vendida]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[QUANTIDADE_VENDIDA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1341,172 +1341,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_001].[Unidade_Vendida]">
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Precision" Value="53" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[float]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<AttachedAnnotation Disambiguator="10" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
-		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Fato_002]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="Columns">
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_002].[Cod_Cliente]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_002].[Cod_Produto]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_002].[Cod_Fabrica]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_002].[Cod_Dia]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_002].[Frete]">
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Precision" Value="53" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[float]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
-			<Relationship Name="Schema">
-				<Entry>
-					<References ExternalSource="BuiltIns" Name="[dbo]" />
-				</Entry>
-			</Relationship>
-			<AttachedAnnotation Disambiguator="11" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="26" />
-		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Fato_003]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
-			<Relationship Name="Columns">
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_003].[Cod_Fabrica]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_003].[Cod_Dia]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Property Name="Length" Value="50" />
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_003].[Custo_Fixo]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_001].[UNIDADE_VENDIDA]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1528,14 +1363,17 @@
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="12" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="27" />
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="28" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Fato_004]">
+		<Element Type="SqlTable" Name="[DBO].[FATO_002]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_004].[Cod_Cliente]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_002].[COD_CLIENTE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1552,7 +1390,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_004].[Cod_Produto]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_002].[COD_PRODUTO]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1569,7 +1407,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_004].[Cod_Organizacional]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_002].[COD_FABRICA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1586,7 +1424,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_004].[Cod_Dia]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_002].[COD_DIA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1603,7 +1441,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_004].[Meta_Faturamento]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_002].[FRETE]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1624,17 +1462,179 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="13" />
+			<AttachedAnnotation Disambiguator="6" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="26" />
+		</Element>
+		<Element Type="SqlTable" Name="[DBO].[FATO_003]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_003].[COD_FABRICA]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_003].[COD_DIA]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_003].[CUSTO_FIXO]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Precision" Value="53" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[float]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="11" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="27" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="28" />
+		</Element>
+		<Element Type="SqlTable" Name="[DBO].[FATO_004]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_004].[COD_CLIENTE]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_004].[COD_PRODUTO]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_004].[COD_ORGANIZACIONAL]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_004].[COD_DIA]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_004].[META_FATURAMENTO]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Precision" Value="53" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[float]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="7" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="29" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="30" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="31" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="32" />
 		</Element>
-		<Element Type="SqlTable" Name="[dbo].[Fato_005]">
+		<Element Type="SqlTable" Name="[DBO].[FATO_005]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_005].[Cod_Produto]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_005].[COD_PRODUTO]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1651,7 +1651,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_005].[Cod_Fabrica]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_005].[COD_FABRICA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1668,7 +1668,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_005].[Cod_Dia]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_005].[COD_DIA]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -1685,7 +1685,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Fato_005].[Meta_Custo]">
+					<Element Type="SqlSimpleColumn" Name="[DBO].[FATO_005].[META_CUSTO]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1706,135 +1706,135 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="14" />
+			<AttachedAnnotation Disambiguator="4" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="33" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="34" />
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="35" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Dim_Marca_Dim_Categoria]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_DIM_MARCA_DIM_CATEGORIA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Dim_Marca].[Cod_Categoria]" />
+					<References Name="[DBO].[DIM_MARCA].[COD_CATEGORIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Marca]" />
+					<References Name="[DBO].[DIM_MARCA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Categoria].[Cod_Categoria]" />
+					<References Name="[DBO].[DIM_CATEGORIA].[COD_CATEGORIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Categoria]" />
+					<References Name="[DBO].[DIM_CATEGORIA]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="15" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Dim_Organizacional_Dim_Organizacional]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_DIM_ORGANIZACIONAL_DIM_ORGANIZACIONAL]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional].[Cod_Pai]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL].[COD_PAI]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional].[Cod_Filho]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL].[COD_FILHO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="16" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Dim_Produto_Dim_marca]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_DIM_PRODUTO_DIM_MARCA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto].[Cod_marca]" />
+					<References Name="[DBO].[DIM_PRODUTO].[COD_MARCA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto]" />
+					<References Name="[DBO].[DIM_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Marca].[Cod_marca]" />
+					<References Name="[DBO].[DIM_MARCA].[COD_MARCA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Marca]" />
+					<References Name="[DBO].[DIM_MARCA]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="17" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_001_Dim_Cliente]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_001_DIM_CLIENTE]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_001].[Cod_Cliente]" />
+					<References Name="[DBO].[FATO_001].[COD_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_001]" />
+					<References Name="[DBO].[FATO_001]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente].[Cod_Cliente]" />
+					<References Name="[DBO].[DIM_CLIENTE].[COD_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente]" />
+					<References Name="[DBO].[DIM_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="18" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_001_Dim_Dia]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_001_DIM_DIA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_001].[Cod_Dia]" />
+					<References Name="[DBO].[FATO_001].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_001]" />
+					<References Name="[DBO].[FATO_001]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo].[Cod_Dia]" />
+					<References Name="[DBO].[DIM_TEMPO].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo]" />
+					<References Name="[DBO].[DIM_TEMPO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="22" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_001_Dim_Fabrica]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_001_DIM_FABRICA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_001].[Cod_Fabrica]" />
+					<References Name="[DBO].[FATO_001].[COD_FABRICA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_001]" />
+					<References Name="[DBO].[FATO_001]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
@@ -1849,107 +1849,107 @@
 			</Relationship>
 			<AttachedAnnotation Disambiguator="21" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_001_Dim_Organizacional]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_001_DIM_ORGANIZACIONAL]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_001].[Cod_Organizacional]" />
+					<References Name="[DBO].[FATO_001].[COD_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_001]" />
+					<References Name="[DBO].[FATO_001]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional].[Cod_Filho]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL].[COD_FILHO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="20" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_001_Dim_Produto]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_001_DIM_PRODUTO]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_001].[Cod_Produto]" />
+					<References Name="[DBO].[FATO_001].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_001]" />
+					<References Name="[DBO].[FATO_001]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto].[COD_PRODUTO]" />
+					<References Name="[DBO].[DIM_PRODUTO].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto]" />
+					<References Name="[DBO].[DIM_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="19" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_002_Dim_Cliente]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_002_DIM_CLIENTE]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_002].[Cod_Cliente]" />
+					<References Name="[DBO].[FATO_002].[COD_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_002]" />
+					<References Name="[DBO].[FATO_002]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente].[Cod_Cliente]" />
+					<References Name="[DBO].[DIM_CLIENTE].[COD_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente]" />
+					<References Name="[DBO].[DIM_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="23" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_002_Dim_Dia]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_002_DIM_DIA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_002].[Cod_Dia]" />
+					<References Name="[DBO].[FATO_002].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_002]" />
+					<References Name="[DBO].[FATO_002]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo].[Cod_Dia]" />
+					<References Name="[DBO].[DIM_TEMPO].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo]" />
+					<References Name="[DBO].[DIM_TEMPO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="26" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_002_Dim_Fabrica]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_002_DIM_FABRICA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_002].[Cod_Fabrica]" />
+					<References Name="[DBO].[FATO_002].[COD_FABRICA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_002]" />
+					<References Name="[DBO].[FATO_002]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
@@ -1964,61 +1964,61 @@
 			</Relationship>
 			<AttachedAnnotation Disambiguator="25" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_002_Dim_Produto]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_002_DIM_PRODUTO]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_002].[Cod_Produto]" />
+					<References Name="[DBO].[FATO_002].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_002]" />
+					<References Name="[DBO].[FATO_002]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto].[COD_PRODUTO]" />
+					<References Name="[DBO].[DIM_PRODUTO].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto]" />
+					<References Name="[DBO].[DIM_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="24" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_003_Dim_Dia]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_003_DIM_DIA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_003].[Cod_Dia]" />
+					<References Name="[DBO].[FATO_003].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_003]" />
+					<References Name="[DBO].[FATO_003]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo].[Cod_Dia]" />
+					<References Name="[DBO].[DIM_TEMPO].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo]" />
+					<References Name="[DBO].[DIM_TEMPO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="28" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_003_Dim_Fabrica]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_003_DIM_FABRICA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_003].[Cod_Fabrica]" />
+					<References Name="[DBO].[FATO_003].[COD_FABRICA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_003]" />
+					<References Name="[DBO].[FATO_003]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
@@ -2033,130 +2033,130 @@
 			</Relationship>
 			<AttachedAnnotation Disambiguator="27" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_004_Dim_Cliente]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_004_DIM_CLIENTE]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_004].[Cod_Cliente]" />
+					<References Name="[DBO].[FATO_004].[COD_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_004]" />
+					<References Name="[DBO].[FATO_004]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente].[Cod_Cliente]" />
+					<References Name="[DBO].[DIM_CLIENTE].[COD_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Cliente]" />
+					<References Name="[DBO].[DIM_CLIENTE]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="29" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_004_Dim_Dia]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_004_DIM_DIA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_004].[Cod_Dia]" />
+					<References Name="[DBO].[FATO_004].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_004]" />
+					<References Name="[DBO].[FATO_004]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo].[Cod_Dia]" />
+					<References Name="[DBO].[DIM_TEMPO].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo]" />
+					<References Name="[DBO].[DIM_TEMPO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="32" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_004_Dim_Organizacional]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_004_DIM_ORGANIZACIONAL]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_004].[Cod_Organizacional]" />
+					<References Name="[DBO].[FATO_004].[COD_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_004]" />
+					<References Name="[DBO].[FATO_004]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional].[Cod_Filho]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL].[COD_FILHO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Organizacional]" />
+					<References Name="[DBO].[DIM_ORGANIZACIONAL]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="31" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_004_Dim_Produto]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_004_DIM_PRODUTO]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_004].[Cod_Produto]" />
+					<References Name="[DBO].[FATO_004].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_004]" />
+					<References Name="[DBO].[FATO_004]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto].[COD_PRODUTO]" />
+					<References Name="[DBO].[DIM_PRODUTO].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto]" />
+					<References Name="[DBO].[DIM_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="30" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_005_Dim_Dia]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_005_DIM_DIA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_005].[Cod_Dia]" />
+					<References Name="[DBO].[FATO_005].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_005]" />
+					<References Name="[DBO].[FATO_005]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo].[Cod_Dia]" />
+					<References Name="[DBO].[DIM_TEMPO].[COD_DIA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Tempo]" />
+					<References Name="[DBO].[DIM_TEMPO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="35" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_005_Dim_Fabrica]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_005_DIM_FABRICA]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_005].[Cod_Fabrica]" />
+					<References Name="[DBO].[FATO_005].[COD_FABRICA]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_005]" />
+					<References Name="[DBO].[FATO_005]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
@@ -2171,25 +2171,25 @@
 			</Relationship>
 			<AttachedAnnotation Disambiguator="34" />
 		</Element>
-		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Fato_005_Dim_Produto]">
+		<Element Type="SqlForeignKeyConstraint" Name="[DBO].[FK_FATO_005_DIM_PRODUTO]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[Fato_005].[Cod_Produto]" />
+					<References Name="[DBO].[FATO_005].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
 				<Entry>
-					<References Name="[dbo].[Fato_005]" />
+					<References Name="[DBO].[FATO_005]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto].[COD_PRODUTO]" />
+					<References Name="[DBO].[DIM_PRODUTO].[COD_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
 				<Entry>
-					<References Name="[dbo].[Dim_Produto]" />
+					<References Name="[DBO].[DIM_PRODUTO]" />
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="33" />

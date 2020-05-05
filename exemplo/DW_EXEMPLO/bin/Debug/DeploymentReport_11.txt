@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Dim_Marca]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Dim_Marca] (Table)
+     Alter
+       [dbo].[Dim_Produto] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Dim_Marca_Dim_Categoria] (Foreign Key)
+       [dbo].[FK_Dim_Produto_Dim_marca] (Foreign Key)
+     Create
+       [dbo].[FK_Dim_Marca_Dim_Categoria] (Foreign Key)
+       [dbo].[FK_Dim_Produto_Dim_marca] (Foreign Key)
